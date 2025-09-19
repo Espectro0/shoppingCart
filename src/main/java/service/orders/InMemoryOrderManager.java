@@ -20,7 +20,7 @@ public class InMemoryOrderManager implements OrderRepository {
      */
 
     private static final InMemoryOrderManager INSTANCE = new InMemoryOrderManager();
-    List<Order> orders;
+    private List<Order> orders;
 
     private InMemoryOrderManager() {
         orders = new ArrayList<>();
